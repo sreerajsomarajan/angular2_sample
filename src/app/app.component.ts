@@ -11,5 +11,13 @@ export class AppComponent {
   tweet = {
     totalLikes: 10,
     iLike: false
+  };
+  post = {
+    voteCount: 10,
+    myVote: 0
+  };
+
+  onVote(event) {
+    console.log(event);
   }
 }

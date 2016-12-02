@@ -2,21 +2,22 @@ import { Component, Input } from '@angular/core'
 
 @Component({
   selector: 'like',
-  template: `<i
-                class="glyphicon glyphicon-heart"
-                [class.highlighted]="iLike"
-                (click)="onClick()">
-             </i>
-             <span>{{ totalLikes }}</span>
-            `,
+  template: `
+    <i
+      class="glyphicon glyphicon-heart"
+      [class.highlighted]="iLike"
+      (click)="onClick()">
+    </i>
+    <span>{{ totalLikes }}</span>
+  `,
   styles: [`
-            .glyphicon-heart {
-              color: #ccc;
-              cursor: pointer;
-            }
-            .highlighted {
-              color: deeppink;
-            }
+    .glyphicon-heart {
+      color: #ccc;
+      cursor: pointer;
+    }
+    .highlighted {
+      color: deeppink;
+    }
   `]
 })
 
