@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { CoursesComponent } from './course/courses.component';
 import { AuthorComponent } from './author/author.component';
 import { StarComponent } from './star/star.component';
+import { LikeComponent } from './like/like.component';
 import { AppComponent } from './app.component';
 
 import { AutoGrowDirective } from './shared/auto-grow.directive'
@@ -16,6 +17,7 @@ import { AutoGrowDirective } from './shared/auto-grow.directive'
     CoursesComponent,
     AuthorComponent,
     StarComponent,
+    LikeComponent,
     AutoGrowDirective
   ],
   imports: [
@@ -26,4 +28,5 @@ import { AutoGrowDirective } from './shared/auto-grow.directive'
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
