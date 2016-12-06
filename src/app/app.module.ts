@@ -8,6 +8,7 @@ import { AuthorComponent } from './author/author.component';
 import { StarComponent } from './star/star.component';
 import { LikeComponent } from './like/like.component';
 import { VoterComponent } from './voter/voter.component';
+import { TweetComponent } from './tweet/tweet.component';
 import { AppComponent } from './app.component';
 
 import { AutoGrowDirective } from './shared/auto-grow.directive'
@@ -20,6 +21,7 @@ import { AutoGrowDirective } from './shared/auto-grow.directive'
     StarComponent,
     LikeComponent,
     VoterComponent,
+    TweetComponent,
     AutoGrowDirective
   ],
   imports: [

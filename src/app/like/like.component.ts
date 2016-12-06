@@ -3,6 +3,7 @@ import { Component, Input } from '@angular/core'
 @Component({
   selector: 'like',
   template: `
+    <h2>Like Section</h2>
     <i
       class="glyphicon glyphicon-heart"
       [class.highlighted]="iLike"

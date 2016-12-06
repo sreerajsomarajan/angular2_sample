@@ -1,13 +1,19 @@
-<div class="voter">
-  <i
-    class="glyphicon glyphicon-menu-up vote-button"
-    [class.highlighted]="myVote == 1"
-    (click)="upVote()">
-  </i>
-  <span class="vote-count">{{ voteCount + myVote }}</span>
-  <i
-    class="glyphicon glyphicon-menu-down vote-button"
-    [class.highlighted]="myVote == -1"
-    (click)="downVote()">
-  </i>
+<h2>Tweets</h2>
+<div *ngFor="let tweet of tweets; let i = index" class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object tweet-image" src="http://lorempixel.com/100/100/people?{{ i }}" alt="Tweet image">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading tweet-author">
+      {{ tweet.author }}
+      <span>@{{ tweet.handler }}</span>
+    </h4>
+    <p>{{ tweet.body }}</p>
+    <div>
+      <i class="glyphicon glyphicon-heart" [class.highlighted]="tweet.iLike" (click)="onClick()"></i>
+      <span>{{ tweet.totalLikes }}</span>
+    </div>
+  </div>
 </div>

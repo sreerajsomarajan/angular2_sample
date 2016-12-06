@@ -3,6 +3,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core'
 @Component({
   selector: 'voter',
   template: `
+    <h2>Vote Section</h2>
     <div class="voter">
       <i
         class="glyphicon glyphicon-menu-up vote-button"
