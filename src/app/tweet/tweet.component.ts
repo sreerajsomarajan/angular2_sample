@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core'
+import { Component } from '@angular/core'
 import { TweetService } from './tweet.service'
 
 @Component({
@@ -15,7 +15,8 @@ export class TweetComponent {
     this.tweets = tweetService.getTweets();
   }
 
-  onClick() {
-    console.log('dddd');
+  onClick(tweet) {
+    tweet.iLike = !tweet.iLike;
+    tweet.totalLikes += tweet.iLike ? 1 : -1;
   }
 }
